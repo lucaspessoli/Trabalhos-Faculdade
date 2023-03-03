@@ -1,0 +1,111 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
+ */
+
+package com.mycompany.mark2;
+
+import java.util.Scanner;
+
+/**
+ *
+ package com.mycompany.mark1;
+/**
+ *
+ * @author Lucas Pessoli
+ */
+import java.util.Scanner;
+public class Mark1 {
+
+    public static void main(String[] args) {
+        //Ex1 - if,else
+        if (10 < 20) {
+            System.out.println("Hello world!");
+        } else {
+            System.out.println("Hello Unipar!");
+        }
+        //Ex2 - Calcula Área do Triângulo4
+        Scanner scn = new Scanner(System.in);
+        System.out.println("Qual a sua base em cm?");
+        double base = scn.nextDouble();
+        System.out.println("Qual a sua altura em cm?");
+        double altura = scn.nextDouble();
+        double resultadoCm = (base * altura) / 2;
+        double resultadoM = (base * altura / 100) / 2;
+        System.out.println("O resultado em centímetros foi: " + resultadoCm);
+        System.out.println("O resultado em metros foi: " + resultadoM);
+        if (resultadoCm > 10) {
+            System.out.println("Hello World!");
+        } else {
+            System.out.println("...");
+        }
+    }
+    }
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ * @author aluno
+ */
+public class Mark2 {
+
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        System.out.println("Informe seu nome: ");
+        String nome = scn.nextLine();
+        System.out.println("Informe seu sexo: ");
+        char genero = scn.next().charAt(0);
+        System.out.println("Seu nome é: " + nome + ", seu sexo: " + genero);
+//        if (genero == 'F' || genero == 'f'){
+//            System.out.println("Seu gênero é: Feminino");
+//        }else if (genero == 'M' || genero =='m'){
+//            System.out.println("Seu gênero é: Homem");
+//        }else{
+//            System.out.println("Seu gênero é: Programador");
+//        }
+        switch(genero){
+            case 'f', 'F' -> System.out.println("Seu gênero é: feminino");
+            case 'm', 'M' -> System.out.println("Seu gênero é: masculino");
+            case 'g', 'G' -> System.out.println("Seu gênero é: gremista");
+            case 'l', 'L' -> System.out.println("Seu gênero é: londrina");
+            
+        }
+//        if ("F".equals(genero)){
+//            System.out.println("Você é mulher");
+//        }else if("M".equals(genero)){
+//            System.out.println("Você é homem");
+//        }else{
+//            System.out.println("Você é programador");
+//        }
+    }
+}
