@@ -10,8 +10,8 @@ CREATE TABLE IF NOT EXISTS Funcionario(
 	endereco varchar(40),
 	telefone varchar(35),
 	cod_departamento int,
-	CONSTRAINT fk_departamento FOREIGN KEY
-	(cod_departamento) REFERENCES departamento (departamentoId) 
+	CONSTRAINT fk_departamento FOREIGN KEY (cod_departamento) REFERENCES departamento (departamentoId)
+	--Puxando de DEPARTAMENTO e atribuindo ao cod_departamento, o valor que ele irá atribuir vem de departamentoId em DEPARTAMENTO
 );
 
 CREATE TABLE IF NOT EXISTS Dependentes(
